@@ -17,15 +17,15 @@ $(document).ready(function() {
     //create a function to initialize the game once the page loads.  
         function initializeGame () {
     
-            firstCrystalNumber = Math.floor(Math.random() * 10);
+            firstCrystalNumber = Math.floor(Math.random() * 10) +1;
     
-            secondCrystalNumber = Math.floor(Math.random() * 10);
+            secondCrystalNumber = Math.floor(Math.random() * 10) +1;
     
-            thirdCrystalNumber = Math.floor(Math.random() * 10);
+            thirdCrystalNumber = Math.floor(Math.random() * 10) +1;
     
-            fourthCrystalNumber = Math.floor(Math.random() * 10);
+            fourthCrystalNumber = Math.floor(Math.random() * 10) +1;
     
-            randomTotal = Math.floor(Math.random() * 100);
+            randomTotal = Math.floor(Math.random() * 100) +1;
             $("#random-number").text(randomTotal);
     
         }
@@ -73,15 +73,15 @@ $(document).ready(function() {
                 
     {
     
-        firstCrystalNumber = Math.floor(Math.random() * 10);
+        firstCrystalNumber = Math.floor(Math.random() * 10) +1;
     
-        secondCrystalNumber = Math.floor(Math.random() * 10);
+        secondCrystalNumber = Math.floor(Math.random() * 10) +1;
     
-        thirdCrystalNumber = Math.floor(Math.random() * 10);
+        thirdCrystalNumber = Math.floor(Math.random() * 10) +1;
     
-        fourthCrystalNumber = Math.floor(Math.random() * 10);
+        fourthCrystalNumber = Math.floor(Math.random() * 10) +1;
     
-        newrandomTotal = Math.floor(Math.random() * 100);
+        newrandomTotal = Math.floor(Math.random() * 100) +1;
             $("#random-number").text(newrandomTotal);
     
         TotalScore = 0
