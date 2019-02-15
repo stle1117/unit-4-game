@@ -64,16 +64,15 @@ $(document).ready(function() {
     }
     
     //set-up while statement: while totalScore < randomTotal, continue playing
-    
-    while (totalScoreCounter<randomTotal); {
+    while (totalScoreCounter < randomTotal); {
         playGame()
     }
-    
+
     /*set-up if...else if statement: if totalScore = randomTotal...wins, reset
     else if totalScore > randomTotal...losses, reset*/
     
     //write reset function
-    function resetGame () {
+    function resetGame() {
     
         firstCrystalNumber = Math.floor(Math.random() * 10) +1;
     
@@ -86,19 +85,22 @@ $(document).ready(function() {
         newrandomTotal = Math.floor(Math.random() * 100) +1;
             $("#random-number").text(newrandomTotal);
     
-        totalScoreCounter = 0
+        totalScoreCounter = 0;
+
+        initializeGame()
     }
-       
+    
+
     function checkTotal () {
         if (totalScoreCounter === randomTotal) {
             winsCounter++;
-            $("#wins").text("Wins: " + winsCounter);
+            $("#wins").text(winsCounter);
             resetGame();
         }
 
-        if (totalScoreCounter > randomTotal) {
+        else if (totalScoreCounter > randomTotal) {
             lossesCounter++;
-            $("#losses").text("Losses: " + lossesCounter);
+            $("#losses").text(lossesCounter);
             resetGame()
         }
 
@@ -106,5 +108,5 @@ $(document).ready(function() {
     
     //call function to initialize the game
     initializeGame();
-    
+
 });
