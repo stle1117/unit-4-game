@@ -94,13 +94,13 @@ $(document).ready(function() {
     function checkTotal () {
         if (totalScoreCounter === randomTotal) {
             winsCounter++;
-            $("#wins").text(winsCounter);
+            $("#wins").text("Wins: " + winsCounter);
             resetGame();
         }
 
         else if (totalScoreCounter > randomTotal) {
             lossesCounter++;
-            $("#losses").text(lossesCounter);
+            $("#losses").text("Losses: " + lossesCounter);
             resetGame()
         }
 
