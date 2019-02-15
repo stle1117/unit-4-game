@@ -26,8 +26,10 @@ $(document).ready(function() {
         fourthCrystalNumber = Math.floor(Math.random() * 10) +1;
 
         randomTotal = Math.floor(Math.random() * 100) +1;
-        $("#random-number").text(randomTotal);
+            $("#random-number").text(randomTotal);
 
+        totalScoreCounter = 0
+            $("total-score").text(totalScoreCounter);
     }
     
     /*create on-click events that capture the value of the user's selection
@@ -86,6 +88,7 @@ $(document).ready(function() {
             $("#random-number").text(newrandomTotal);
     
         totalScoreCounter = 0;
+            $("total-score").text(totalScoreCounter);
 
         initializeGame()
     }
