@@ -29,7 +29,7 @@ $(document).ready(function() {
             $("#random-number").text(randomTotal);
 
         totalScoreCounter = 0
-            $("total-score").text(totalScoreCounter);
+            $("#total-score").text(totalScoreCounter);
     }
     
     /*create on-click events that capture the value of the user's selection
@@ -64,11 +64,8 @@ $(document).ready(function() {
         })
     
     }
-    
-    //set-up while statement: while totalScore < randomTotal, continue playing
-    while (totalScoreCounter < randomTotal); {
-        playGame()
-    }
+
+    playGame();
 
     /*set-up if...else if statement: if totalScore = randomTotal...wins, reset
     else if totalScore > randomTotal...losses, reset*/
@@ -88,7 +85,7 @@ $(document).ready(function() {
             $("#random-number").text(newrandomTotal);
     
         totalScoreCounter = 0;
-            $("total-score").text(totalScoreCounter);
+            $("#total-score").text(totalScoreCounter);
 
         initializeGame()
     }
