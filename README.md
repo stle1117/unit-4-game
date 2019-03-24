@@ -1,6 +1,8 @@
 # unit-4-game
 CrystalsCollector Game
 
+https://stle1117.github.io/unit-4-game/
+
 Uses HTML, JavaScript, JQuery, Bootstrap, and CSS.
 This is a game where there are four images.  Each 
 image is assigned a hidden random value between 1 and 10
